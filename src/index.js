@@ -7,6 +7,8 @@ import './App.css';
 import Homepage from "./Homepage";
 import Blogdetail from "./Blogdetail";
 import Addblog from "./Addblog";
+import Login from "./Login";
+import Signup from "./Signup";
 import Editblog from "./Editblog";
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
 
                 <Route path="/" element={<Homepage />}/> 
                 <Route path="/Addblog" element={<Addblog/>}/>
+                <Route path="/Login" element={<Login/>}/>
+                <Route path="/Signup" element={<Signup/>}/>
                 <Route path="/Editblog/:id" element={<Editblog/>}/>
             </Routes>
             </BrowserRouter>

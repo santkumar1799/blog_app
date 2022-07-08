@@ -10,8 +10,6 @@ function Addblog(){
     const [blogImage, setBlogimage] = useState('');
     const [url, setUrl] = useState('');
     const navigate = useNavigate();
-    const [selectedFile, setFile] = useState({ name : ""});
-
     let add = () => {
         // const formData = new FormData();
         // console.log('selectedFile', selectedFile)

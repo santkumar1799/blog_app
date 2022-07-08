@@ -50,7 +50,6 @@ function Blogdetail() {
                             <h5 className="card-title">Title :&nbsp;{blog.title}</h5>
                             <h5 className="card-title">Author :&nbsp;{blog.blog_title}</h5>
                             <h5 className="card-title">Description : &nbsp;{blog.blog_descp}</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                     <Link to={`/Editblog/${id}`}>

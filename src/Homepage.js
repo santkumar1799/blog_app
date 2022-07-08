@@ -21,12 +21,12 @@ function Homepage() {
 	let  handleClick = async () => { 
 		var ss = document.getElementById('search').value;
 		setSearch(ss);
-		const url = `http://127.0.0.1:3000/blogs/`
+		const url = `http://127.0.0.1:3000/blogs/search/${ss}`
 		const response = await fetch(url);
 		const responseJson = await response.json();
 		
-		if (responseJson.Search) {
-			setBlog(responseJson.Search);
+		if (response.ok) {
+			setBlog(responseJson);
 			console.log(blogs);
 		}
 		document.getElementById('search').value='';
@@ -36,9 +36,19 @@ function Homepage() {
 			<nav className="navbar fixed-top bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand">Blogging World</a>
-                    <Link to={`/Addblog`}>
-                    <button className="btn btn-outline-success add" id="add">
+                    <Link className="add" to={`/Addblog`}>
+                    <button className="btn btn-outline-success" id="add">
                      Add 
+                    </button>
+                    </Link>
+                    <Link className="add" to={`/Login`}>
+                    <button className="btn btn-outline-success" id="add">
+                     Login 
+                    </button>
+                    </Link>
+                    <Link className="add" to={`/Signup`}>
+                    <button className="btn btn-outline-success" id="add">
+                     Sign up
                     </button>
                     </Link>
                     <form className="d-flex" role="search">
