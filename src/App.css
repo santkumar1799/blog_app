@@ -1,0 +1,79 @@
+.navbar{
+    position: fixed;
+    z-index: 3;
+}
+.movies{
+    position: relative;
+    top: 50px;
+}
+.movie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.movieimg{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    height: 400px;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.moviedetail{
+    position: relative;
+    top: 60px;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card-img-top{
+    height: 400px;
+}
+a{
+    text-decoration: none;
+}
+.add{
+    margin-left: 800px;
+}
+.heading{
+    margin-top: 100px;
+}
+.addBlog{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 500px;
+    height: 380px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.blog-input{
+    width: 480px;
+}
+.desc-text{
+    height: 150px;
+}
+.blog-descp{
+    margin-left: 10px;
+    margin-top: 5%;
+}
+.blog-title{
+    margin-left: 10px;
+    margin-top: 2%;
+}
+.update{
+    width: 480px;
+    margin-left: 8px;
+}
+.card-descp{
+    width: 380px;
+    max-height: 70px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
